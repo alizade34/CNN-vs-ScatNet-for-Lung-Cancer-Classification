@@ -1,0 +1,9 @@
+{
+  "attribution_generation": {
+    "status": "completed",
+    "samples_processed": 3,
+    "cnn_attributions": true,
+    "scatnet_attributions": true,
+    "save_path": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\results\\explainability"
+  }
+}

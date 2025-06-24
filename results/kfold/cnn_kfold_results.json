@@ -1,0 +1,35 @@
+{
+  "results_summary": {
+    "k_folds": 5,
+    "accuracy_scores": [
+      99.96875,
+      99.90625,
+      99.96875,
+      99.8125,
+      99.9375
+    ],
+    "f1_scores": [
+      0.9993749997558592,
+      0.9990624991760246,
+      0.9996874999694825,
+      0.98999899989999,
+      0.9971874777525096
+    ],
+    "statistics": {
+      "mean_accuracy": 99.91875,
+      "std_accuracy": 0.06480137922914912,
+      "mean_f1": 0.9970622953107732,
+      "std_f1": 0.0040665381332500375,
+      "min_accuracy": 99.8125,
+      "max_accuracy": 99.96875,
+      "min_f1": 0.98999899989999,
+      "max_f1": 0.9996874999694825,
+      "accuracy_ci_lower": 99.83828846037721,
+      "accuracy_ci_upper": 99.99921153962279,
+      "f1_ci_lower": 0.9920130213133939,
+      "f1_ci_upper": 1.0021115693081526
+    },
+    "performance_assessment": {
+      "all_folds_above_70": true,
+      "consistency_level": "EXCELLENT",
+      "target_achieved": 

@@ -1,0 +1,130 @@
+{
+  "dataset": {
+    "raw_path": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\data\\raw",
+    "processed_path": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\data\\processed",
+    "classes": [
+      "adenocarcinoma",
+      "benign"
+    ],
+    "class_to_idx": {
+      "adenocarcinoma": 0,
+      "benign": 1
+    },
+    "total_images": 20000,
+    "split_ratio": {
+      "train": 0.8,
+      "test": 0.2
+    },
+    "split_info": {
+      "adenocarcinoma": {
+        "total": 10000,
+        "train": 8000,
+        "test": 2000,
+        "train_percentage": 80.0,
+        "test_percentage": 20.0
+      },
+      "benign": {
+        "total": 10000,
+        "train": 8000,
+        "test": 2000,
+        "train_percentage": 80.0,
+        "test_percentage": 20.0
+      }
+    },
+    "image_stats": {
+      "adenocarcinoma": {
+        "avg_width": 768.0,
+        "avg_height": 768.0,
+        "avg_aspect_ratio": 1.0,
+        "avg_file_size_mb": 0.11379020690917968
+      },
+      "benign": {
+        "avg_width": 768.0,
+        "avg_height": 768.0,
+        "avg_aspect_ratio": 1.0,
+        "avg_file_size_mb": 0.09808270454406738
+      }
+    }
+  },
+  "requirements": {
+    "minimum_accuracy": 0.7,
+    "assigned_method": "DeepLIFT",
+    "deliverables": {
+      "report_pages": "6-8",
+      "presentation_minutes": 18,
+      "exam_date": "June 27, 2025"
+    }
+  },
+  "paths": {
+    "project_root": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project",
+    "results": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\results",
+    "models": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\models",
+    "notebooks": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\notebooks"
+  },
+  "cnn_setup": {
+    "cnn_architecture": {
+      "status": "completed",
+      "model_params": 5929570,
+      "model_size_mb": 22.61951446533203,
+      "quality_checks": {
+        "model_architecture": true,
+        "shared_classifier": true,
+        "data_loading": true,
+        "forward_pass": true,
+        "save_load": true,
+        "parameter_count": true
+      },
+      "checks_passed": "6/6",
+      "ready_for_training": true
+    },
+    "data_status": {
+      "train_samples": 16000,
+      "test_samples": 4000,
+      "data_loading_works": true,
+      "pipeline_tested": true
+    },
+    "files_created": {
+      "model_architecture": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\models\\cnn_architecture.pth",
+      "model_config": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\models\\cnn_config.json",
+      "augmentation_viz": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\results\\data_augmentation_examples.png"
+    }
+  },
+  "cnn_training": {
+    "status": "completed",
+    "final_test_accuracy": 99.95,
+    "best_val_accuracy": 99.96875,
+    "test_f1_score": 0.9995,
+    "target_achieved": true,
+    "epochs_trained": 20,
+    "model_path": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\models\\cnn_final_trained.pth",
+    "ready_for_kfold": true
+  },
+  "scatnet_training": {
+    "status": "completed",
+    "final_test_accuracy": 99.4,
+    "best_val_accuracy": 99.46875,
+    "test_f1_score": 0.993999993999994,
+    "target_achieved": true,
+    "epochs_trained": 15,
+    "model_path": "D:\\University\\4th Semester\\4. Visual Intelligence\\Project\\models\\scatnet_final_trained.pth",
+    "ready_for_comparison": true
+  },
+  "filter_analysis": {
+    "status": "completed",
+    "cnn_filters_analyzed": true,
+    "scatnet_wavelets_analyzed": true,
+    "comprehensive_comparison": true,
+    "performance_comparison": {
+      "cnn_accuracy": null,
+      "scatnet_accuracy": 99.4,
+      "both_exceed_target": false
+    }
+  },
+  "explainability": {
+    "status": "completed",
+    "samples_processed": 5,
+    "cnn_attributions": true,
+    "scatnet_attributions": true,
+    "comparison_analysis": true
+  }
+}

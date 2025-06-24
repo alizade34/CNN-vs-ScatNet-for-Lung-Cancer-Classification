@@ -1,0 +1,16 @@
+{
+  "adenocarcinoma": {
+    "total": 10000,
+    "train": 8000,
+    "test": 2000,
+    "train_percentage": 80.0,
+    "test_percentage": 20.0
+  },
+  "benign": {
+    "total": 10000,
+    "train": 8000,
+    "test": 2000,
+    "train_percentage": 80.0,
+    "test_percentage": 20.0
+  }
+}
